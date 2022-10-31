@@ -27,6 +27,7 @@
 		1446D9E8290A69E0006E1080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1446D9EE290A6B2D006E1080 /* Observable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Observable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1446D9EF290A8295006E1080 /* Traits.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Traits.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		14EE06B4290F900400864AE3 /* FilteringOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilteringOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		14F9D3CA290B9BEB00A3FD94 /* Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3AA7DB7520805AAD1352E674 /* Pods-RxSwiftPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPractice.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftPractice/Pods-RxSwiftPractice.release.xcconfig"; sourceTree = "<group>"; };
 		6EF2323C6C82B9636DCEC470 /* Pods_RxSwiftPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,9 +49,10 @@
 		1446D9CE290A69DF006E1080 = {
 			isa = PBXGroup;
 			children = (
-				14F9D3CA290B9BEB00A3FD94 /* Subject.playground */,
-				1446D9EF290A8295006E1080 /* Traits.playground */,
 				1446D9EE290A6B2D006E1080 /* Observable.playground */,
+				1446D9EF290A8295006E1080 /* Traits.playground */,
+				14F9D3CA290B9BEB00A3FD94 /* Subject.playground */,
+				14EE06B4290F900400864AE3 /* FilteringOperators.playground */,
 				1446D9D9290A69DF006E1080 /* RxSwiftPractice */,
 				1446D9D8290A69DF006E1080 /* Products */,
 				B84F5F41077CE3AA436747EA /* Pods */,

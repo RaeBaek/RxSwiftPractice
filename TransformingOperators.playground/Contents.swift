@@ -130,18 +130,18 @@ input
             ? Observable.empty()
             : Observable.just($0)
     }
-    .map { $0! }
-    .skip(while: { $0 != 0 })
-    .take(11)   //010-1234-5678
-    .toArray()
-    .asObservable()
+    .map { $0! }                // 옵셔널 처리
+    .skip(while: { $0 != 0 })   // 전화번호는 0부터 시작하니까 시작이 0인지 아닌지 구분
+    .take(11)                   // 0부터 시작하면 11자리를 받는다 ex)010-1234-5678
+    .toArray()                  // toArray로 Single로 만들어준다
+    .asObservable()             // asObservable로 다시 변환한다
     .map {
-        $0.map { "\($0)" }
+        $0.map { "\($0)" }      // Array 안의 Int 값을 String 값으로 변환
     }
     .map { numbers in
         var numberList = numbers
-        numberList.insert("-", at: 3)   //010-
-        numberList.insert("-", at: 8)   //010-1234-
+        numberList.insert("-", at: 3)   //010-  3번째 인덱스
+        numberList.insert("-", at: 8)   //010-1234- 8번째 인덱스
         let number = numberList.reduce(" ", +)
         return number
     }
@@ -150,7 +150,7 @@ input
     })
     .disposed(by: disposeBag)
 
-input.onNext(10)
+input.onNext(10)    //전화번호는 0부터 시작이므로 10이 들어가면 걸러지게 됨
 input.onNext(0)
 input.onNext(nil)
 input.onNext(1)
